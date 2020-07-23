@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
@@ -126,10 +130,40 @@
           </div>
           <!-- rating hotel-info__rating -->
         </div>
-        <!-- container -->
+        <!-- hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="slide" class="slide-image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide-2.jpg" alt="slide" class="slide-image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide-3.jpg" alt="slide" class="slide-image" />
+                </div>
+                ...
+              </div>
+                <!-- swiper-wrapper -->
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+            <!-- swiper-container -->
+          </div>
+          <!-- slider -->
+        </div>
+        <!-- hotel-grid -->
       </div>
-      <!-- hotel-info -->
+      <!-- container -->
     </section>
     <!-- secrion-hotel -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
