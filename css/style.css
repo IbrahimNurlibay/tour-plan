@@ -629,6 +629,7 @@ template {
   height: 100%;
   position: relative;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .swiper-container::after {
