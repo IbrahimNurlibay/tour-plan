@@ -30,3 +30,12 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 });
 
 $(".newsletter-parallax").parallax({ imageSrc: "../img/newsletter-bg.jpg" });
+
+ymaps.ready(init);
+
+function init() {
+  var map = new ymaps.Map("map", {
+    center: [1.31939715, 103.82430220],
+    zoom: 12,
+  });
+}
