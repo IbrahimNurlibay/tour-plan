@@ -3,6 +3,9 @@
     max-width: 960px
   .slider
     width: 590px
+  .card
+    width: 230px
+    height: 230px
 @media (max-width:992px)
   .container,
   .newsletter-wrapper
@@ -43,6 +46,16 @@
     &-slider
       &__item
         max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+      flex-direction: row
+
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 230px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -120,6 +133,12 @@
           right: 50%
           transform: translate(50%, 0)
           margin-right: -65px
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+  .card
+    width: 49%
+    height: 255px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -138,7 +157,8 @@
         font-size: 30px
   .subscribe
     width: 100%
-  
+  .card
+    width: 100%
 
 
 
