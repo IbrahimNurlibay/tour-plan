@@ -29,7 +29,7 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
-$(".newsletter-parallax").parallax({ imageSrc: "../img/newsletter-bg.jpg" });
+$(".newsletter-parallax").parallax({ imageSrc: "img/newsletter-bg.jpg" });
 
 ymaps.ready(init);
 
