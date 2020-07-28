@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -132,56 +133,58 @@
         </div>
         <!-- hotel-info -->
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-2.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-3.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-4.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-5.jpg"
-                    alt="slide"
-                  />
-                </div>
+          <!-- Slider main container -->
+          <div class="swiper-container hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide.jpg"
+                  alt="slide"
+                />
               </div>
-              <!-- swiper-wrapper -->
-              <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-2.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-3.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-4.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-5.jpg"
+                  alt="slide"
+                />
+              </div>
             </div>
-            <!-- swiper-container -->
+            <!-- swiper-wrapper -->
+            <!-- If we need navigation buttons -->
+            <button
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
+            <button
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
-          <!-- slider -->
+          <!-- swiper-container -->
+
           <div class="hotel-right">
             <div class="booking">
               <div class="booking__info">
@@ -224,11 +227,16 @@
             </div>
             <!-- /.booking -->
             <div class="map">
-              <div id="map" class="map" style="width: 100%; height: 213px"></div>
+              <div
+                id="map"
+                class="map"
+                style="width: 100%; height: 213px;"
+              ></div>
+            </div>
+            <!-- hotel-rigth -->
           </div>
-          <!-- hotel-rigth -->
+          <!-- hotel-grid -->
         </div>
-        <!-- hotel-grid -->
       </div>
       <!-- container -->
     </section>
@@ -258,8 +266,12 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people thinks about us</h2>
+        <!-- reviews-slider -->
+        <!-- Slider main container -->
         <div class="swiper-container reviews-slider">
+          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
+            <!-- Slides -->
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
@@ -294,9 +306,65 @@
               </div>
               <!-- /.reviews-slider__item -->
             </div>
-            <!-- swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/mark.jpg"
+                    alt="Image: avatar"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Mark Zuckerberg</h3>
+                  <span class="reviews-slider__date">Stayed 21 Seb, 2018</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                  </div>
+                  <!-- reviews-slider__rating -->
+                </div>
+                <!-- reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Super hotel with great service! Delicious food. Great interior, everything is thought out to the smallest detail! The
+                  staff is very helpful, ready to solve any problem and fulfill any request. Special thanks to Gusti Kertayasa for help in
+                  choosing the most interesting proposal for a stay and duration, resolved any requests addressed to him, including when
+                  medical assistance was needed, organized a high-quality call of a qualified doctor to the room, organized an escort to
+                  the hospital for the delivery of medicines. At the end, we walked to the airport right to the check-in desk! Thanks for
+                  a wonderful stay!
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/bill.jpg"
+                    alt="Image: avatar"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Bill Gates</h3>
+                  <span class="reviews-slider__date">Stayed 15 Mar, 2017</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                  </div>
+                  <!-- reviews-slider__rating -->
+                </div>
+                <!-- reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  The hotel is not cheap, but worth the money without a doubt. VERY friendly staff. The cuisine is the most varied and
+                  delicious. Of the minuses, perhaps the inability to leave the hotel without a car. About a kilometer you have to move
+                  along the side of the road to civilization.
+                </p>
+              </div>
+            </div>
           </div>
-          <!-- swiper-wrapper -->
           <button
             class="reviews-slider__button reviews-slider__button--prev"
           ></button>
@@ -304,7 +372,6 @@
             class="reviews-slider__button reviews-slider__button--next"
           ></button>
         </div>
-        <!-- reviews-slider -->
       </div>
       <!-- container -->
     </section>
@@ -349,8 +416,7 @@
               alt="картинка развлечение"
               class="card__image"
             />
-            <h3 class="card__title">The blue marine discovery
-            quest</h3>
+            <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
