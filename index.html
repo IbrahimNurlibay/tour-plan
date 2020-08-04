@@ -27,7 +27,7 @@
           </a>
           <form
             action="#"
-            class="search navbar__search navbar__search_mobile_hidden"
+            class="search navbar__search navbar__search_mobile_hidden form"
           >
             <input
               type="text"
@@ -289,13 +289,14 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button class="subscribe__button" name="submit_1" type="submit">
             Send
@@ -620,19 +621,26 @@
           <!-- footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  minlength="2"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input nomer"
+                  placeholder="+7 (999) 999-99-99"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 placeholder="Message"
                 class="message footer__message"
@@ -678,24 +686,28 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="5"
           />
           <input
-            type="text"
-            class="input modal__input"
-            placeholder="Phone Number*"
+            type="tel"
+            class="input modal__input nomer"
+            placeholder="+7 (999) 999-99-99"
             name="phone"
+            required
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
-            placeholder="Email*"
+            placeholder="Your Email*"
             name="email"
+            required
           />
           <textarea
             placeholder="Message"
@@ -716,6 +728,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c2d7a4b0-22cf-41b1-8659-25f8eaab7940&lang=ru_RU"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

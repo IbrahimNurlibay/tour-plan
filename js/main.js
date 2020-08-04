@@ -70,4 +70,27 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
+  //Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please enter your name",
+          minlength: "Name must be at least 2 letters long",
+        },
+        phone: {
+          required: "Phone is required",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    }); 
+  });
+  //jQuery Mask Input маска для номера телефона
+  $(document).ready(function () {
+    $('.nomer').mask('+7(000) 000-00-00');
+  });
 });

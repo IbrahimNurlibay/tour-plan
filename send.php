@@ -16,7 +16,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'nurlibay.ibr.0002@gmail.com'; // Логин на почте
-    $mail->Password   = ''; // Пароль на почте
+    $mail->Password   = '770005poiqweIBR'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('nurlibay.ibr.0002@gmail.com', 'Ибрахим Нурлибаев'); // Адрес самой почты и имя отправителя
