@@ -19,7 +19,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="/" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="logo: Best Tour Plan"
@@ -44,7 +44,7 @@
             </button>
           </form>
 
-          <a class="user navbar__user navbar__user_mobile_hidden">
+          <a href="/" class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -312,25 +312,36 @@
           <!-- footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  minlength="2"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input nomer"
+                  placeholder="+7 (999) 999-99-99"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 placeholder="Message"
-                class="footer__message"
+                class="message footer__message"
                 name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">
+              <button
+                class="button footer__button"
+                name="submit_2"
+                type="submit"
+              >
                 Send
               </button>
               <span class="footer__info">* Required Fields</span>

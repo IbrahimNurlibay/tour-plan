@@ -25,6 +25,31 @@ try {
     $mail->addAddress('nurlibev@mail.ru');  
 
     // Переменные, которые отправляет пользователь
+    if (isset($_POST['submit_3'])) {
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Формирование самого письма
+    $title_3 = "Новое обращение Best Tour Plan";
+    $body_3 = "
+    <h2>Новое письмо</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br>
+    <b>Email:</b>$email<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+
+    // Отправка сообщения
+    $mail->isHTML(true);
+    $mail->Subject = $title_3;
+    $mail->Body = $body_3; 
+
+    header('Location: thankyou.html');
+    }
+
+    // Переменные, которые отправляет пользователь
     if (isset($_POST['submit_1'])) {
     $email = $_POST['email'];
 
@@ -32,7 +57,7 @@ try {
     $title_1 = "Новое обращение Best Tour Plan";
     $body_1 = "
     <h2>User email</h2>
-    <b>email:</b><br>$email
+    <b>Email:</b><br>$email
     ";
 
     // скрипт для отправки почты
@@ -41,7 +66,7 @@ try {
     $mail->Body = $body_1; 
 
     // Отображение результата
-    header('Location: thankyou_two.html');
+    header('Location: thankyou.html');
     }
 
 
@@ -67,6 +92,7 @@ try {
 
     header('Location: thankyou.html');
     }
+
     
 
 // Проверяем отравленность сообщения

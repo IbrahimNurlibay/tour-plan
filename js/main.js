@@ -83,7 +83,7 @@ $(document).ready(function () {
           required: "Phone is required",
         },
         email: {
-          required: "We need your email address to contact you",
+          required: "Email is important!",
           email: "Your email address must be in the format of name@domain.com",
         },
       },
