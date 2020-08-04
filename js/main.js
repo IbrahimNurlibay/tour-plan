@@ -28,14 +28,14 @@ $(document).ready(function () {
 
   $(".newsletter-parallax").parallax({ imageSrc: "img/newsletter-bg.jpg" });
 
-  ymaps.ready(init);
+  // ymaps.ready(init);
 
-  function init() {
-    var map = new ymaps.Map("map", {
-      center: [1.31939715, 103.8243022],
-      zoom: 12,
-    });
-  }
+  // // function init() {
+  // //   var map = new ymaps.Map("map", {
+  // //     center: [1.31939715, 103.8243022],
+  // //     zoom: 12,
+  // //   });
+  // // }
 
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
@@ -93,4 +93,7 @@ $(document).ready(function () {
   $(document).ready(function () {
     $('.nomer').mask('+7(000) 000-00-00');
   });
+
+  AOS.init();
+
 });
