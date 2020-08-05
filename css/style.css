@@ -865,11 +865,13 @@ template {
   background-color: #000;
   border-radius: 10px;
   overflow: hidden;
+  border: none;
 }
 
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no repeat;
   background-position: center;
   background-size: cover;
@@ -1548,7 +1550,7 @@ template {
   .hotel-slider {
     width: 100%;
   }
-  #map {
+  .map {
     width: 340px;
   }
   .reviews__title {
@@ -1633,6 +1635,9 @@ template {
   .footer__pay-list {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .modal__dialog {
+    width: 600px;
   }
 }
 
@@ -1813,6 +1818,15 @@ template {
   .card {
     width: 49%;
     height: 255px;
+  }
+  .modal__dialog {
+    max-width: 100%;
+  }
+  .modal__button {
+    padding: 14px;
+  }
+  .modal__info {
+    margin-top: 15px;
   }
 }
 
